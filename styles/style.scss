@@ -4,7 +4,11 @@
 @import "abstracts/template";
 @import "abstracts/variables";
 
+@import "vendors/normalize";
+
 @import "base/base";
 @import "base/general";
 
-@import "vendors/normalize";
+@import "layout/header";
+
+@import "components/avatar";

@@ -1,85 +1,8 @@
-:root {
-  --box-color: #3a478e;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  height: 100%;
-  font-size: 1rem;
-  scroll-behavior: smooth;
-}
-
-body {
-  position: relative;
-  padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
-  background-color: #ffffff;
-  color: #7a7a7a;
-  line-height: 1.42;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-p {
-  margin: 0;
-}
-
-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-button:active {
-  outline: none;
-}
-
-.container {
-  max-width: 75rem;
-  width: 95%;
-  margin: 0 auto;
-  padding: 1.25rem 0;
-}
-@media (max-width: 992px) {
-  .container {
-    width: 100%;
-  }
+.avatar__image {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -419,6 +342,173 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+:root {
+  --box-color: #3a478e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 0.9375rem;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 0.875rem;
+  }
+}
+
+body {
+  position: relative;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #7a7a7a;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+button:active {
+  outline: none;
+}
+
+.container {
+  max-width: 75rem;
+  width: 95%;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .header {
+    flex-direction: column;
+  }
+}
+
+.header__avatar {
+  flex: 1 0 0%;
+}
+@media (max-width: 576px) {
+  .header__avatar {
+    width: 100%;
+    order: 2;
+  }
+}
+
+.header__box {
+  position: relative;
+  flex: 0 0 auto;
+  width: 70%;
+  padding: 1.5625rem 3.125rem;
+  background-color: var(--box-color);
+}
+.header__box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  display: block;
+  width: 9.375rem;
+  height: 4.375rem;
+  top: -22%;
+  right: 4%;
+  background-image: url("./assets/img/html+css+js.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 576px) {
+  .header__box::after {
+    top: 75%;
+  }
+}
+@media (max-width: 576px) {
+  .header__box {
+    width: 100%;
+    padding: 0.625rem;
+    order: 1;
+  }
+}
+
+.header__title {
+  margin-bottom: 0.625rem;
+  font-size: 3.125rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+.header__title span {
+  font-weight: 500;
+}
+
+.header__specialty {
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.avatar {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

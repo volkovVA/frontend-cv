@@ -13,6 +13,12 @@ html {
   height: 100%;
   font-size: rem(16);
   scroll-behavior: smooth;
+  @include media-tablet {
+    font-size: rem(15);
+  }
+  @include media-mobile {
+    font-size: rem(14);
+  }
 }
 
 body {
@@ -29,7 +35,6 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 h1,
