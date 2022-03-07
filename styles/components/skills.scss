@@ -1,0 +1,30 @@
+.skills__title {
+  @extend %left-title;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: rem(16);
+  padding: rem(36) rem(50);
+  @include media-tablet {
+    padding: rem(16) rem(30);
+  }
+}
+
+.skills__name {
+  position: relative;
+  margin-bottom: rem(18);
+  margin-left: rem(22);
+  @include font-source(rem(22), 400, $main-color);
+  &::before {
+    @include pseudo(block, absolute, "//");
+    display: block;
+    left: rem(-24);
+  }
+}
+
+.skills__item {
+  margin-bottom: rem(10);
+  color: $text-color;
+}
