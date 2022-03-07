@@ -1,0 +1,44 @@
+.projects__title {
+  @extend %left-title;
+}
+
+.projects__container {
+  @include flex(center, none, column);
+  padding: rem(36) rem(50);
+}
+
+.projects__github {
+  @include flex(none, center, none);
+  margin-bottom: rem(20);
+}
+
+.projects__desc {
+  @include flex(none, none, column);
+}
+
+.projects__subtitle {
+  @include font-source(rem(22), 400, $main-color);
+  &--mb {
+    margin-bottom: rem(20);
+  }
+}
+
+.projects__link {
+  margin-bottom: rem(6);
+  color: $text-color;
+}
+
+.projects__icon {
+  margin-right: rem(20);
+}
+
+.projects__name {
+  color: $main-color;
+  &--mr {
+    margin-right: rem(8);
+  }
+}
+
+.projects__item {
+  margin-bottom: rem(10);
+}
