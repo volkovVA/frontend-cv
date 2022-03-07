@@ -1,0 +1,81 @@
+:root {
+  --box-color: #3a478e;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: rem(16);
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  font-family: $mainFont;
+  background-color: $main-color;
+  color: $text-dark-color;
+  line-height: $mainLineHeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  &:active {
+    outline: none;
+  }
+}
+
+.container {
+  max-width: rem(1200);
+  width: 95%;
+  margin: 0 auto;
+  padding: rem(20) 0;
+  @include media-tablet {
+    width: 100%;
+  }
+}

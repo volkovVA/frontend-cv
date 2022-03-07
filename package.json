@@ -1,0 +1,19 @@
+{
+  "name": "frontend-cv",
+  "version": "1.0.0",
+  "description": "cv",
+  "main": "script.js",
+  "scripts": {
+    "style": "sass --watch styles/style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovVA/frontend-cv.git"
+  },
+  "author": "Volkov Viacheslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volkovVA/frontend-cv/issues"
+  },
+  "homepage": "https://github.com/volkovVA/frontend-cv#readme"
+}
