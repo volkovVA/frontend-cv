@@ -1,0 +1,21 @@
+.main {
+  @include flex(none, center, none);
+  @include media-mobile {
+    flex-direction: column;
+  }
+}
+
+.main__column {
+  @include flex(none, center, column);
+  &:first-child {
+    flex: 1 0 0%;
+    background-color: $bg-color;
+  }
+  &:last-child {
+    flex: 0 0 auto;
+    width: 65%;
+  }
+  @include media-mobile {
+    width: 100%;
+  }
+}

@@ -35,28 +35,18 @@
   background-color: $text-color;
 }
 
-// Item
-
-%item {
-  @include flex;
-  margin-bottom: rem(16);
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-// Icon
-
-%icon {
-  margin-right: rem(30);
-  padding: rem(7) 0;
-}
-
-// Link
-
-%link {
-  transition: text-shadow 0.2s;
-  &:hover {
-    text-shadow: 3px 3px 2px $default-color;
+%left-title {
+  position: relative;
+  @include flex(none, center, none);
+  width: 100%;
+  height: rem(70);
+  padding: 0 rem(50);
+  background-color: var(--box-color);
+  &::after {
+    @include pseudo;
+    bottom: rem(16);
+    width: 70%;
+    height: 2px;
+    background-color: $main-color;
   }
 }

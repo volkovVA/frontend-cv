@@ -51,6 +51,11 @@ h6 {
 a {
   text-decoration: none;
   color: inherit;
+  transition: text-shadow 0.2s;
+  border-bottom: 1px dotted $text-color;
+  &:hover {
+    text-shadow: 3px 3px 2px $default-color;
+  }
 }
 
 ul {

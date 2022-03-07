@@ -1,0 +1,32 @@
+.contacts__title {
+  @extend %left-title;
+}
+
+.contacts__list {
+  padding: rem(36) rem(50);
+}
+
+.contacts__item {
+  @include flex(none, center, none);
+  margin-bottom: rem(20);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__icon {
+  margin-right: rem(20);
+}
+
+.contacts__desc {
+  @include flex(none, none, column);
+}
+
+.contacts__name {
+  @include font-source(rem(22), 400, $main-color);
+}
+
+.contacts__link {
+  margin-bottom: rem(6);
+  color: $text-color;
+}
