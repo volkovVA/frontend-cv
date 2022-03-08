@@ -622,6 +622,28 @@ button:active {
   }
 }
 
+.footer {
+  display: flex;
+}
+
+.footer__name {
+  display: block;
+  flex: 1 0 0%;
+  padding: 1.875rem 3.125rem;
+  background-color: #434343;
+  color: #cbcccc;
+}
+
+.footer__year {
+  display: block;
+  flex: 0 0 auto;
+  width: 65%;
+  padding: 1.875rem 3.125rem;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
 .avatar {
   width: 100%;
 }
