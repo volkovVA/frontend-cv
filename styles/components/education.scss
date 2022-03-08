@@ -1,0 +1,40 @@
+.education {
+  padding: rem(36) rem(20) rem(0) rem(50);
+}
+
+.education__title {
+  @extend %dark-title;
+}
+
+.education__container {
+  position: relative;
+  @include flex;
+  padding-left: rem(40);
+  &::before {
+    @extend %line;
+  }
+  &::after {
+    @extend %circle;
+    left: -3px;
+  }
+}
+
+.education__box:first-child {
+  flex-basis: 33%;
+}
+
+.education__box:last-child {
+  flex-basis: 67%;
+}
+
+.education__major,
+.education__hei {
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: 1.8;
+  color: $title-color;
+}
+
+.education__date {
+  font-weight: 500;
+}

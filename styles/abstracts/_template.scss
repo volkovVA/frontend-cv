@@ -15,7 +15,7 @@
   top: rem(20);
   left: rem(6);
   display: block;
-  height: 100%;
+  height: 96%;
   width: 2px;
   background-color: $title-color;
 }
@@ -26,7 +26,6 @@
   content: "";
   position: absolute;
   top: rem(10);
-  left: rem(-44);
   display: block;
   width: rem(20);
   height: rem(20);
