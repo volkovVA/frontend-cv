@@ -471,6 +471,9 @@ button:active {
   color: #ffffff;
   text-transform: uppercase;
 }
+.title--color {
+  color: #434343;
+}
 
 .icon {
   width: 1.875rem;
@@ -558,7 +561,6 @@ button:active {
 
 .main {
   display: flex;
-  align-items: center;
 }
 @media (max-width: 576px) {
   .main {
@@ -566,11 +568,6 @@ button:active {
   }
 }
 
-.main__column {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .main__column:first-child {
   flex: 1 0 0%;
   background-color: #434343;
@@ -700,6 +697,23 @@ button:active {
 
 .projects__item {
   margin-bottom: 0.625rem;
+}
+
+.about {
+  padding: 0 1.25rem 0 3.125rem;
+  margin-top: -2.5rem;
+}
+
+.about__title {
+  margin-bottom: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.about__text span {
+  display: block;
+  margin-top: 3px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

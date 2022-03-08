@@ -5,6 +5,9 @@
 .title {
   @include font-source(rem(26), 500, $main-color);
   text-transform: uppercase;
+  &--color {
+    color: $title-color;
+  }
 }
 
 .icon {
