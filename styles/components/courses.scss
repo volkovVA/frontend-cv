@@ -1,6 +1,5 @@
 .courses {
-  padding-left: rem(50);
-  padding-right: rem(20);
+  @extend %block-padding;
 }
 
 .courses__list {

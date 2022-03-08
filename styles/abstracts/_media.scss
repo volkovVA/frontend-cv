@@ -1,13 +1,25 @@
 @import "./variables";
 
-@mixin media-tablet{
-  @media (max-width: $mediaWidthTablet) {
-      @content;
+@mixin media-large {
+  @media (max-width: $mediaLarge) {
+    @content;
   }
 }
 
-@mixin media-mobile {
-  @media (max-width: $mediaWidthMobile) {
-      @content;
+@mixin media-medium {
+  @media (max-width: $mediaMedium) {
+    @content;
+  }
+}
+
+@mixin media-small {
+  @media (max-width: $mediaSmall) {
+    @content;
+  }
+}
+
+@mixin media-extra-small {
+  @media (max-width: $mediaExtraSmall) {
+    @content;
   }
 }

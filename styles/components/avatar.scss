@@ -4,4 +4,7 @@
 
 .avatar__image {
   @extend %image-cover;
+  @include media-small {
+    object-position: center rem(60);
+  }
 }

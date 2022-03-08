@@ -33,3 +33,16 @@
   border: 2px solid $title-color;
   background-color: $text-color;
 }
+
+%block-padding {
+  padding-left: rem(50);
+  padding-right: rem(50);
+  @include media-large {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
+  @include media-medium {
+    padding-left: rem(30);
+    padding-right: rem(30);
+  }
+}

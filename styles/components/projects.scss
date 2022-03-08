@@ -1,7 +1,9 @@
 .projects__container {
   @include flex(center, none, column);
-  padding-left: rem(50);
-  padding-right: rem(50);
+  @extend %block-padding;
+  @include media-medium {
+    align-items: center;
+  }
 }
 
 .projects__github {

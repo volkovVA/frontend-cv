@@ -2,9 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: rem(16);
-  padding-left: rem(50);
-  padding-right: rem(50);
-  @include media-tablet {
+  @extend %block-padding;
+  @include media-large {
     padding: rem(16) rem(30);
   }
 }
@@ -24,4 +23,10 @@
 .skills__item {
   margin-bottom: rem(10);
   color: $text-color;
+}
+
+.skills__box {
+  @include media-medium {
+    justify-self: center;
+  }
 }

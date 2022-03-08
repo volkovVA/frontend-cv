@@ -3,6 +3,13 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  @include media-large {
+    box-shadow: none;
+  }
+  @include media-medium {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
 }
 
 .column {
@@ -13,10 +20,13 @@
     background-color: $bg-color;
     color: $text-color;
   }
-}
-
-.column:first-child {
-  background-color: $bg-color;
+  &:first-child {
+    background-color: $bg-color;
+    @include media-medium {
+      margin-top: 20%;
+      margin-bottom: 5%;
+    }
+  }
 }
 
 .section {

@@ -1,32 +1,39 @@
 .header {
+  width: 100%;
   padding: rem(60) 0 rem(40);
+  @include media-medium {
+    position: absolute;
+    top: 0;
+  }
 }
 
 .header__box {
   position: relative;
+  @include flex(center, flex-start, column);
   width: 100%;
-  height: rem(160);
-  padding: rem(25) rem(50);
+  padding: rem(20) rem(50);
   background-color: var(--box-color);
   &::after {
     @include pseudo;
     display: block;
     width: rem(210);
-    height: rem(70);
-    top: -22%;
+    min-height: rem(60);
+    top: -28%;
     right: 4%;
     background-image: url("./assets/img/html+css+js+react.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
-    @include media-mobile {
-      top: 75%;
+    background-size: contain;
+    @include media-large {
+      width: rem(180);
     }
-  }
-  @include media-mobile {
-    width: 100%;
-    padding: rem(10);
-    order: 1;
+    @include media-small {
+      width: rem(160);
+    }
+    @include media-extra-small {
+      width: rem(140);
+      top: -34%;
+    }
   }
 }
 
@@ -36,8 +43,20 @@
   & span {
     font-weight: 500;
   }
+  @include media-large {
+    font-size: rem(36);
+  }
+  @include media-extra-small {
+    font-size: rem(26);
+  }
 }
 
 .header__specialty {
   @include font-source(rem(28), 300, $main-color);
+  @include media-large {
+    font-size: rem(30);
+  }
+  @include media-extra-small {
+    font-size: rem(20);
+  }
 }

@@ -1,6 +1,5 @@
 .education {
-  padding-left: rem(50);
-  padding-right: rem(20);
+  @extend %block-padding;
 }
 
 .education__container {
@@ -15,6 +14,10 @@
   &::after {
     @extend %circle;
     left: -3px;
+  }
+  @include media-large {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
   }
 }
 

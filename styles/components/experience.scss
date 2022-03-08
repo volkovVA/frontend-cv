@@ -1,6 +1,5 @@
 .experience {
-  padding-left: rem(50);
-  padding-right: rem(20);
+  @extend %block-padding;
 }
 
 .experience__list {
@@ -20,6 +19,10 @@
   &::before {
     @extend %circle;
     left: rem(-43);
+  }
+  @include media-large {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
   }
 }
 
