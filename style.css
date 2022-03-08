@@ -5,7 +5,7 @@
   object-position: center;
 }
 
-.education__container::before, .experience__list::before {
+.courses__list::before, .education__container::before, .experience__list::before {
   content: "";
   position: absolute;
   top: 1.25rem;
@@ -16,7 +16,7 @@
   background-color: #434343;
 }
 
-.education__container::after, .experience__item::before {
+.courses__item::before, .education__container::after, .experience__item::before {
   content: "";
   position: absolute;
   top: 0.625rem;
@@ -42,11 +42,11 @@
   background-color: #ffffff;
 }
 
-.education__title, .experience__title {
+.courses__title, .education__title, .experience__title {
   position: relative;
   margin-bottom: 1.875rem;
 }
-.education__title::after, .experience__title::after {
+.courses__title::after, .education__title::after, .experience__title::after {
   content: "";
   display: block;
   position: absolute;
@@ -825,6 +825,37 @@ button:active {
 }
 
 .education__date {
+  font-weight: 500;
+}
+
+.courses {
+  padding: 2.25rem 1.25rem 0rem 3.125rem;
+}
+
+.courses__list {
+  position: relative;
+  padding-left: 2.5rem;
+}
+.courses__item {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+.courses__item::before {
+  left: -2.6875rem;
+}
+
+.courses__link {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #434343;
+}
+.courses__link--text {
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.courses__text {
   font-weight: 500;
 }
 
