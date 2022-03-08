@@ -1,0 +1,46 @@
+.experience {
+  padding: rem(36) rem(20) rem(0) rem(50);
+}
+
+.experience__title {
+  @extend %dark-title;
+}
+
+.experience__list {
+  position: relative;
+  padding-left: rem(40);
+  &::before {
+    @extend %line;
+  }
+}
+
+.experience__item {
+  position: relative;
+  @include flex;
+  margin-bottom: rem(20);
+  &::before {
+    @extend %circle;
+  }
+}
+
+.experience__box:first-child {
+  flex: 1 0 0%;
+}
+
+.experience__box:last-child {
+  flex: 0 0 auto;
+  width: 65%;
+}
+
+.experience__position,
+.experience__company {
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: 1.8;
+  color: $title-color;
+}
+
+.experience__date {
+  font-weight: 500;
+  white-space: nowrap;
+}

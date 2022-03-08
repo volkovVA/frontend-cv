@@ -13,7 +13,7 @@
   content: "";
   position: absolute;
   top: rem(20);
-  left: 0;
+  left: rem(6);
   display: block;
   height: 100%;
   width: 2px;
@@ -26,7 +26,7 @@
   content: "";
   position: absolute;
   top: rem(10);
-  left: rem(-43);
+  left: rem(-44);
   display: block;
   width: rem(20);
   height: rem(20);
@@ -37,16 +37,23 @@
 
 %left-title {
   position: relative;
-  @include flex(none, center, none);
-  width: 100%;
-  height: rem(70);
-  padding: 0 rem(50);
+  padding: rem(20) rem(50);
   background-color: var(--box-color);
   &::after {
     @include pseudo;
-    bottom: rem(16);
     width: 70%;
     height: 2px;
     background-color: $main-color;
+  }
+}
+
+%dark-title {
+  position: relative;
+  margin-bottom: rem(30);
+  &::after {
+    @include pseudo;
+    width: 100%;
+    height: 2px;
+    background-color: $title-color;
   }
 }
