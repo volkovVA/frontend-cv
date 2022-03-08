@@ -1,9 +1,6 @@
 .courses {
-  padding: rem(36) rem(20) rem(0) rem(50);
-}
-
-.courses__title {
-  @extend %dark-title;
+  padding-left: rem(50);
+  padding-right: rem(20);
 }
 
 .courses__list {

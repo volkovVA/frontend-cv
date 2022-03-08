@@ -1,32 +1,21 @@
 .header {
-  @include flex(none, center, none);
-  @include media-mobile {
-    flex-direction: column;
-  }
-}
-
-.header__avatar {
-  flex: 1 0 0%;
-  @include media-mobile {
-    width: 100%;
-    order: 2;
-  }
+  padding: rem(60) 0 rem(40);
 }
 
 .header__box {
   position: relative;
-  flex: 0 0 auto;
-  width: 65%;
+  width: 100%;
+  height: rem(160);
   padding: rem(25) rem(50);
   background-color: var(--box-color);
   &::after {
     @include pseudo;
     display: block;
-    width: rem(150);
+    width: rem(210);
     height: rem(70);
     top: -22%;
     right: 4%;
-    background-image: url("./assets/img/html+css+js.png");
+    background-image: url("./assets/img/html+css+js+react.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

@@ -7,52 +7,25 @@
 
 .courses__list::before, .education__container::before, .experience__list::before {
   content: "";
+  display: block;
   position: absolute;
   top: 1.25rem;
   left: 0.375rem;
-  display: block;
-  height: 96%;
   width: 2px;
+  height: 96%;
   background-color: #434343;
 }
 
 .courses__item::before, .education__container::after, .experience__item::before {
   content: "";
+  display: block;
   position: absolute;
   top: 0.625rem;
-  display: block;
   width: 1.25rem;
   height: 1.25rem;
   border-radius: 50%;
   border: 2px solid #434343;
-  background-color: #cbcccc;
-}
-
-.projects__title, .skills__title, .contacts__title {
-  position: relative;
-  padding: 1.25rem 3.125rem;
-  background-color: var(--box-color);
-}
-.projects__title::after, .skills__title::after, .contacts__title::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 70%;
-  height: 2px;
-  background-color: #ffffff;
-}
-
-.courses__title, .education__title, .experience__title {
-  position: relative;
-  margin-bottom: 1.875rem;
-}
-.courses__title::after, .education__title::after, .experience__title::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #434343;
+  background-color: #cccccc;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -426,7 +399,7 @@ body {
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   background-color: #ffffff;
-  color: #7a7a7a;
+  color: #535353;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -466,15 +439,6 @@ p {
   margin: 0;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-button:active {
-  outline: none;
-}
-
 .container {
   max-width: 75rem;
   width: 95%;
@@ -487,18 +451,63 @@ button:active {
   }
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column__name {
+  display: block;
+  padding: 1.875rem 3.125rem;
+  background-color: #434343;
+  color: #cccccc;
+}
+
+.column:first-child {
+  background-color: #434343;
+}
+
 .section {
-  width: 100%;
+  margin-bottom: 2.5rem;
 }
 
 .title {
+  margin-bottom: 2.5rem;
   font-size: 1.625rem;
   font-weight: 500;
-  color: #ffffff;
   text-transform: uppercase;
 }
-.title--color {
+.title--dark {
+  position: relative;
   color: #434343;
+}
+.title--dark::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #434343;
+}
+.title--light {
+  position: relative;
+  padding: 1.25rem 3.125rem;
+  background-color: var(--box-color);
+  color: #ffffff;
+}
+.title--light::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  background-color: #ffffff;
 }
 
 .icon {
@@ -506,53 +515,36 @@ button:active {
   height: 1.875rem;
   fill: #ffffff;
 }
-.icon--telegram {
+.icon--telegram, .icon--linkedin, .icon--github {
   width: 2.25rem;
   height: 2.25rem;
 }
-.icon--github {
-  width: 2.5rem;
-  height: 2.5rem;
-}
 
 .link {
+  font-size: 1.125rem;
   transition: text-shadow 0.2s;
-  border-bottom: 1px dotted #cbcccc;
-}
-.link:hover {
-  text-shadow: 3px 3px 2px #000000;
 }
 .link--light {
-  border-bottom: 1px dotted #434343;
+  border-bottom: 1px dotted #cccccc;
 }
 .link--light:hover {
+  text-shadow: 3px 3px 2px black;
+}
+.link--dark {
+  border-bottom: 1px dotted #434343;
+}
+.link--dark:hover {
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
 }
 
 .header {
-  display: flex;
-  align-items: center;
-}
-@media (max-width: 576px) {
-  .header {
-    flex-direction: column;
-  }
-}
-
-.header__avatar {
-  flex: 1 0 0%;
-}
-@media (max-width: 576px) {
-  .header__avatar {
-    width: 100%;
-    order: 2;
-  }
+  padding: 3.75rem 0 2.5rem;
 }
 
 .header__box {
   position: relative;
-  flex: 0 0 auto;
-  width: 65%;
+  width: 100%;
+  height: 10rem;
   padding: 1.5625rem 3.125rem;
   background-color: var(--box-color);
 }
@@ -561,11 +553,11 @@ button:active {
   display: block;
   position: absolute;
   display: block;
-  width: 9.375rem;
+  width: 13.125rem;
   height: 4.375rem;
   top: -22%;
   right: 4%;
-  background-image: url("./assets/img/html+css+js.png");
+  background-image: url("./assets/img/html+css+js+react.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -599,45 +591,12 @@ button:active {
   color: #ffffff;
 }
 
-.main {
-  display: flex;
-}
-@media (max-width: 576px) {
-  .main {
-    flex-direction: column;
-  }
-}
-
-.main__column:first-child {
-  flex: 1 0 0%;
-  background-color: #434343;
-}
-.main__column:last-child {
-  flex: 0 0 auto;
-  width: 65%;
-}
-@media (max-width: 576px) {
-  .main__column {
-    width: 100%;
-  }
-}
-
 .footer {
-  display: flex;
-}
-
-.footer__name {
-  display: block;
-  flex: 1 0 0%;
-  padding: 1.875rem 3.125rem;
-  background-color: #434343;
-  color: #cbcccc;
+  margin-top: auto;
 }
 
 .footer__year {
   display: block;
-  flex: 0 0 auto;
-  width: 65%;
   padding: 1.875rem 3.125rem;
   text-align: center;
   font-size: 1.125rem;
@@ -649,7 +608,8 @@ button:active {
 }
 
 .contacts__list {
-  padding: 2.25rem 3.125rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
 }
 
 .contacts__item {
@@ -670,7 +630,7 @@ button:active {
   flex-direction: column;
 }
 
-.contacts__name {
+.contacts__subtitle {
   font-size: 1.375rem;
   font-weight: 400;
   color: #ffffff;
@@ -678,14 +638,15 @@ button:active {
 
 .contacts__link {
   margin-bottom: 0.375rem;
-  color: #cbcccc;
+  color: #cccccc;
 }
 
 .skills__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  padding: 2.25rem 3.125rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
 }
 @media (max-width: 992px) {
   .skills__container {
@@ -693,15 +654,15 @@ button:active {
   }
 }
 
-.skills__name {
+.skills__subtitle {
   position: relative;
-  margin-bottom: 1.125rem;
   margin-left: 1.375rem;
+  margin-bottom: 1.125rem;
   font-size: 1.375rem;
   font-weight: 400;
   color: #ffffff;
 }
-.skills__name::before {
+.skills__subtitle::before {
   content: "//";
   display: block;
   position: absolute;
@@ -711,14 +672,15 @@ button:active {
 
 .skills__item {
   margin-bottom: 0.625rem;
-  color: #cbcccc;
+  color: #cccccc;
 }
 
 .projects__container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 2.25rem 3.125rem;
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
 }
 
 .projects__github {
@@ -743,7 +705,7 @@ button:active {
 
 .projects__link {
   margin-bottom: 0.375rem;
-  color: #cbcccc;
+  color: #cccccc;
 }
 
 .projects__icon {
@@ -762,24 +724,26 @@ button:active {
 }
 
 .about {
-  padding: 0 1.25rem 0 3.125rem;
-  margin-top: -2.5rem;
+  padding-left: 3.125rem;
+  padding-right: 1.25rem;
 }
 
 .about__title {
   margin-bottom: 0.625rem;
   font-size: 1.25rem;
   font-weight: 700;
+  color: #434343;
 }
 
 .about__text span {
-  display: block;
+  display: inline-block;
   margin-top: 3px;
   font-weight: 700;
 }
 
 .experience {
-  padding: 2.25rem 1.25rem 0rem 3.125rem;
+  padding-left: 3.125rem;
+  padding-right: 1.25rem;
 }
 
 .experience__list {
@@ -788,20 +752,13 @@ button:active {
 }
 .experience__item {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
   margin-bottom: 1.25rem;
 }
 .experience__item::before {
   left: -2.6875rem;
-}
-
-.experience__box:first-child {
-  flex: 1 0 0%;
-}
-
-.experience__box:last-child {
-  flex: 0 0 auto;
-  width: 65%;
 }
 
 .experience__position,
@@ -818,24 +775,19 @@ button:active {
 }
 
 .education {
-  padding: 2.25rem 1.25rem 0rem 3.125rem;
+  padding-left: 3.125rem;
+  padding-right: 1.25rem;
 }
 
 .education__container {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
   padding-left: 2.5rem;
 }
 .education__container::after {
   left: -3px;
-}
-
-.education__box:first-child {
-  flex-basis: 33%;
-}
-
-.education__box:last-child {
-  flex-basis: 67%;
 }
 
 .education__major,
@@ -851,7 +803,8 @@ button:active {
 }
 
 .courses {
-  padding: 2.25rem 1.25rem 0rem 3.125rem;
+  padding-left: 3.125rem;
+  padding-right: 1.25rem;
 }
 
 .courses__list {

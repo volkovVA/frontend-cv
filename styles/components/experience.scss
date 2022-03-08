@@ -1,9 +1,6 @@
 .experience {
-  padding: rem(36) rem(20) rem(0) rem(50);
-}
-
-.experience__title {
-  @extend %dark-title;
+  padding-left: rem(50);
+  padding-right: rem(20);
 }
 
 .experience__list {
@@ -16,21 +13,14 @@
 
 .experience__item {
   position: relative;
-  @include flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
   margin-bottom: rem(20);
   &::before {
     @extend %circle;
     left: rem(-43);
   }
-}
-
-.experience__box:first-child {
-  flex: 1 0 0%;
-}
-
-.experience__box:last-child {
-  flex: 0 0 auto;
-  width: 65%;
 }
 
 .experience__position,

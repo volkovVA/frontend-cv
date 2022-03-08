@@ -1,20 +1,11 @@
-.main {
-  @include flex();
-  @include media-mobile {
-    flex-direction: column;
-  }
-}
+// .main {
+//   display: grid;
+//   grid-template-columns: 1fr 2fr;
+//   grid-template-rows: 1fr;
+// }
 
-.main__column {
-  &:first-child {
-    flex: 1 0 0%;
-    background-color: $bg-color;
-  }
-  &:last-child {
-    flex: 0 0 auto;
-    width: 65%;
-  }
-  @include media-mobile {
-    width: 100%;
-  }
-}
+// .main__column {
+//   &:first-child {
+//     background-color: $bg-color;
+//   }
+// }

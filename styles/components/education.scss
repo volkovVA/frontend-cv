@@ -1,14 +1,13 @@
 .education {
-  padding: rem(36) rem(20) rem(0) rem(50);
-}
-
-.education__title {
-  @extend %dark-title;
+  padding-left: rem(50);
+  padding-right: rem(20);
 }
 
 .education__container {
   position: relative;
-  @include flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
   padding-left: rem(40);
   &::before {
     @extend %line;
@@ -17,14 +16,6 @@
     @extend %circle;
     left: -3px;
   }
-}
-
-.education__box:first-child {
-  flex-basis: 33%;
-}
-
-.education__box:last-child {
-  flex-basis: 67%;
 }
 
 .education__major,

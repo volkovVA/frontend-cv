@@ -1,10 +1,7 @@
-.projects__title {
-  @extend %left-title;
-}
-
 .projects__container {
   @include flex(center, none, column);
-  padding: rem(36) rem(50);
+  padding-left: rem(50);
+  padding-right: rem(50);
 }
 
 .projects__github {

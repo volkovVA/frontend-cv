@@ -40,8 +40,8 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <div class="header__avatar">
+      <div class="wrapper">
+        <div class="column">
           <div class="avatar">
             <img
               class="avatar__image"
@@ -49,38 +49,19 @@
               alt="avatar"
             />
           </div>
-        </div>
-        <div class="header__box">
-          <h1 class="header__title">Viacheslav <span>Volkov</span></h1>
-          <span class="header__specialty">Frontend Developer</span>
-        </div>
-      </header>
-      <main class="main">
-        <div class="main__column">
           <section class="section contacts">
-            <h2 class="title contacts__title">contacts</h2>
+            <h2 class="title title--light contacts__title">contacts</h2>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <svg class="icon contacts__icon">
                   <use xlink:href="./assets/svg/sprite.svg#phone"></use>
                 </svg>
                 <div class="contacts__desc">
-                  <h3 class="contacts__name">Phone</h3>
-                  <a href="tel:+375299891554" class="contacts__link"
-                    >+375(29) 989-15-54</a
-                  >
-                </div>
-              </li>
-              <li class="contacts__item">
-                <svg class="icon contacts__icon">
-                  <use xlink:href="./assets/svg/sprite.svg#mail"></use>
-                </svg>
-                <div class="contacts__desc">
-                  <h3 class="contacts__name">Mail</h3>
+                  <h3 class="contacts__subtitle">Phone</h3>
                   <a
-                    href="mailto:volkov.slava@hotmail.com"
-                    class="text contacts__link"
-                    >volkov.slava@hotmail.com</a
+                    href="tel:+375299891554"
+                    class="link link--light contacts__link"
+                    >+375(29) 989-15-54</a
                   >
                 </div>
               </li>
@@ -89,30 +70,56 @@
                   <use xlink:href="./assets/svg/sprite.svg#telegram"></use>
                 </svg>
                 <div class="contacts__desc">
-                  <h3 class="contacts__name">Telegram</h3>
+                  <h3 class="contacts__subtitle">Telegram</h3>
                   <a
                     href="tg://resolve?domain=volkov_slava"
-                    class="text contacts__link"
+                    class="link link--light contacts__link"
                     >@volkov_slava</a
+                  >
+                </div>
+              </li>
+              <li class="contacts__item">
+                <svg class="icon contacts__icon">
+                  <use xlink:href="./assets/svg/sprite.svg#mail"></use>
+                </svg>
+                <div class="contacts__desc">
+                  <h3 class="contacts__subtitle">Mail</h3>
+                  <a
+                    href="mailto:volkov.slava@hotmail.com"
+                    class="link link--light contacts__link"
+                    >volkov.slava@hotmail.com</a
+                  >
+                </div>
+              </li>
+              <li class="contacts__item">
+                <svg class="icon icon--linkedin contacts__icon">
+                  <use xlink:href="./assets/svg/sprite.svg#linkedin"></use>
+                </svg>
+                <div class="contacts__desc">
+                  <h3 class="contacts__subtitle">Linkedin</h3>
+                  <a
+                    href="https://www.linkedin.com/in/volkov-slava"
+                    class="link link--light contacts__link"
+                    >linkedin.com/in/volkov-slava</a
                   >
                 </div>
               </li>
             </ul>
           </section>
           <section class="section skills">
-            <h2 class="title skills__title">skills</h2>
+            <h2 class="title title--light skills__title">skills</h2>
             <div class="skills__container">
               <div class="skills__box">
-                <h3 class="skills__name">Technical</h3>
+                <h3 class="skills__subtitle">Technical</h3>
                 <ul class="skills__list">
-                  <li class="skills__item">HTML / Pug</li>
-                  <li class="skills__item">CSS / Sass</li>
-                  <li class="skills__item">JavaScript</li>
-                  <li class="skills__item">React / Redux</li>
+                  <li class="skills__item">HTML5 / Pug</li>
+                  <li class="skills__item">CSS3 / Sass</li>
+                  <li class="skills__item">JavaScript (ES6+)</li>
+                  <li class="skills__item">ReactJS / Redux</li>
                 </ul>
               </div>
               <div class="skills__box">
-                <h3 class="skills__name">Tools</h3>
+                <h3 class="skills__subtitle">Tools</h3>
                 <ul class="skills__list">
                   <li class="skills__item">Git / GitHub</li>
                   <li class="skills__item">Gulp / Webpack</li>
@@ -122,7 +129,7 @@
                 </ul>
               </div>
               <div class="skills__box">
-                <h3 class="skills__name">Soft</h3>
+                <h3 class="skills__subtitle">Soft</h3>
                 <ul class="skills__list">
                   <li class="skills__item">Responsible</li>
                   <li class="skills__item">Perseverance</li>
@@ -131,7 +138,7 @@
                 </ul>
               </div>
               <div class="skills__box">
-                <h3 class="skills__name">Languages</h3>
+                <h3 class="skills__subtitle">Languages</h3>
                 <ul class="skills__list">
                   <li class="skills__item">Russian native</li>
                   <li class="skills__item">English A2</li>
@@ -140,7 +147,7 @@
             </div>
           </section>
           <section class="section projects">
-            <h2 class="title projects__title">projects</h2>
+            <h2 class="title title--light projects__title">projects</h2>
             <div class="projects__container">
               <div class="projects__github">
                 <svg class="icon icon--github projects__icon">
@@ -150,7 +157,7 @@
                   <h3 class="projects__subtitle">GitHub</h3>
                   <a
                     href="https://github.com/volkovVA"
-                    class="projects__link"
+                    class="link link--light projects__link"
                     rel="noopener noreferrer"
                     target="_blank"
                     >https://github.com/volkovVA
@@ -166,7 +173,7 @@
                     >NewsPortal:</span
                   >
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://volkovva.github.io/newsportal/"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -174,7 +181,7 @@
                   </a>
                   <span class="projects__name">&nbsp;/&nbsp;</span>
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://github.com/volkovVA/newsportal"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -187,7 +194,7 @@
                     >JS Clock:</span
                   >
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://volkovva.github.io/RSSchool/js-clock/"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -195,7 +202,7 @@
                   </a>
                   <span class="projects__name">&nbsp;/&nbsp;</span>
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://github.com/volkovVA/RSSchool/tree/js-clock"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -204,10 +211,10 @@
                 </li>
                 <li class="projects__item">
                   <span class="projects__name projects__name--mr"
-                    >Custom Video Player:</span
+                    >Video Player:</span
                   >
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://volkovva.github.io/RSSchool/custom-video-player/"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -215,7 +222,7 @@
                   </a>
                   <span class="projects__name">&nbsp;/&nbsp;</span>
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://github.com/volkovVA/RSSchool/tree/custom-video-player"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -227,7 +234,7 @@
                     >Virtual Piano:</span
                   >
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://volkovva.github.io/RSSchool/virtual-piano/"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -235,7 +242,7 @@
                   >
                   <span class="projects__name">&nbsp;/&nbsp;</span>
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://github.com/volkovVA/RSSchool/tree/virtual-piano"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -247,7 +254,7 @@
                     >Air Asia:</span
                   >
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://volkovva.github.io/loftschool/air-asia/"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -255,7 +262,7 @@
                   >
                   <span class="projects__name">&nbsp;/&nbsp;</span>
                   <a
-                    class="projects__link"
+                    class="link link--light projects__link"
                     href="https://github.com/volkovVA/loftschool/tree/air-asia"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -265,208 +272,215 @@
               </ul>
             </div>
           </section>
+          <span class="column__name">&#169; Viacheslav Volkov</span>
         </div>
-        <div class="main__column">
-          <section class="section about">
-            <h2 class="title title--color about__title">
-              Hello, I'm Viacheslav
-            </h2>
-            <p class="about__text">
-              I’m developer in the field of Frontend development and determined
-              to become a full-stack developer. I like to bring visual designs
-              to life, make them functional through the use of coding. I have a
-              passion for excellence and I am really committed to achieving the
-              best possible results.
-            </p>
-            <p class="about__text">
-              <span>My purposes:</span> Styding and improving knowledge of
-              HTML5, CSS3, JavaScript technologies. Practice and improve my
-              knowledge of React and Redux. Learn React Native and NodeJS.
-            </p>
-            <p class="about__text">
-              <span>My strengths:</span> I’m driven to succeed and deliver
-              results. And I have the ability to learn new technologies quickly.
-            </p>
-          </section>
-          <section class="section experience">
-            <h2 class="title title--color experience__title">experience</h2>
-            <ul class="experience__list">
-              <li class="experience__item">
-                <div class="experience__box">
-                  <h3 class="experience__position">Student</h3>
-                  <span class="experience__date">Oct 2021 - Feb 2022</span>
-                </div>
-                <div class="experience__box">
-                  <a
-                    class="link link--light experience__company"
-                    href="https://training.by/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >EPAM Training Center | Gomel</a
-                  >
-                  <p class="experience__text">
-                    Training "Front-End Development", Gomel
-                  </p>
-                </div>
-              </li>
-              <li class="experience__item">
-                <div class="experience__box">
-                  <h3 class="experience__position">Frontend Developer</h3>
-                  <span class="experience__date">Dec 2020 - Oct 2021</span>
-                </div>
-                <div class="experience__box">
-                  <a
-                    class="link link--light experience__company"
-                    href="https://seoready.ru"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >Seoready | Saint-Petersburg</a
-                  >
-                  <p class="experience__text">
-                    Layout of new pages and editing of the layout, adjusting the
-                    adaptability of pages for mobile devices, correcting
-                    validator errors, eliminating bugs. Technical audit of sites
-                    and correction of technical aspects of the site. Code
-                    optimization in order to speed up the site. Updating text
-                    and graphic content.
-                  </p>
-                </div>
-              </li>
-              <li class="experience__item">
-                <div class="experience__box">
-                  <h3 class="experience__position">Assistant Mentor</h3>
-                  <span class="experience__date">June 2020 - Dec 2020</span>
-                </div>
-                <div class="experience__box">
-                  <a
-                    class="link link--light experience__company"
-                    href="https://loftschool.com"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >LoftSchool | Saint-Petersburg</a
-                  >
-                  <p class="experience__text">
-                    I taught students markup code, HTML semantics, CSS styles,
-                    JavaScript basics, adaptive layout, basic functionality of
-                    working with Git. I checked students' practical tasks, code
-                    review, error analysis.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="section education">
-            <h2 class="title title--color education__title">education</h2>
-            <div class="education__container">
-              <div class="education__box">
-                <h3 class="education__major">Economist Manager</h3>
-                <span class="education__date">1998 - 2004</span>
-              </div>
-              <div class="education__box">
-                <h3 class="education__hei">
-                  Sukhoi State Technical University | Gomel
-                </h3>
-                <p class="education__text">Incomplete higher education</p>
-              </div>
+        <div class="column">
+          <header class="header">
+            <div class="header__box">
+              <h1 class="header__title">Viacheslav <span>Volkov</span></h1>
+              <span class="header__specialty">Frontend Developer</span>
             </div>
-          </section>
-          <section class="section courses">
-            <h2 class="title title--color courses__title">
-              courses & certificates
-            </h2>
-            <ul class="courses__list">
-              <li class="courses__item">
-                <a
-                  class="link link--light courses__link"
-                  href="https://app.rs.school/certificate/j55t1zxf"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >JS / FE Pre-School (JavaScript)</a
-                >
-                <p class="courses__text">2021 | RS School</p>
-              </li>
-              <li class="courses__item">
-                <a
-                  class="link link--light courses__link"
-                  href="https://loftschool.com/diploma/NPR31420ZJ284PZW8/en/pdf"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Profession: Web developer. Advanced course in Web Development
-                  / VUE</a
-                >
-                <p class="courses__text">2020 | IT-school “Loftschool”</p>
-              </li>
-              <li class="courses__item">
-                <a
-                  class="link link--light courses__link courses__link--udemy"
-                  href="#"
-                  >Modern JavaScript + Vue on real projects</a
-                >
-                <span>/</span>
-                <a
-                  class="link link--light courses__link"
-                  href="https://www.udemy.com/certificate/UC-04c8a658-cb41-4d5a-844a-7879aeb9ccbd/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Practical JavaScript (Advanced level)</a
-                >
-                <p class="courses__text">2020 | Udemy</p>
-              </li>
-              <li class="courses__item">
-                <a
-                  class="link link--light courses__link"
-                  href="https://cdn.specialist.ru/Content/Temp/User/groupcert/1915216small.png"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Web programmer. Creating websites in HTML 5 and CSS 3 /
-                  JavaScript</a
-                >
-                <a
-                  class="link link--light courses__link courses__link--text"
-                  href="https://www.specialist.ru/profile/public/1256405"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Public Profile</a
-                >
-                <span>/</span>
-                <a
-                  class="link link--light courses__link courses__link--text"
-                  href="https://www.specialist.ru/graduate/best2019/740444"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Recommendation Letter</a
-                >
-                <p class="courses__text">
-                  2019 | EC “Specialist” at the Bauman State Technical
-                  University of Moscow
-                </p>
-              </li>
-              <li class="courses__item">
-                <a
-                  class="link link--light courses__link"
-                  href="https://www.freecodecamp.org/certification/volkov_slava/responsive-web-design"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >Responsive Web Design</a
-                >
-                <span>/</span>
-                <a
-                  class="link link--light courses__link"
-                  href="https://www.freecodecamp.org/certification/volkov_slava/javascript-algorithms-and-data-structures"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >JavaScript Algorithms and Data Structures</a
-                >
-                <p class="courses__text">2019 | freeCodeCamp</p>
-              </li>
-            </ul>
-          </section>
+          </header>
+          <main class="main">
+            <section class="section about">
+              <h2 class="about__title">Hello, my name is Slava</h2>
+              <p class="about__text">
+                I’m developer in the field of Frontend development and
+                determined to become a full-stack developer. I like to bring
+                visual designs to life, make them functional through the use of
+                coding. I have a passion for excellence and I am really
+                committed to achieving the best possible results.
+              </p>
+              <p class="about__text">
+                <span>My purposes:</span> Styding and improving knowledge of
+                HTML5, CSS3, JavaScript technologies. Practice and improve my
+                knowledge of React and Redux. Learn React Native and NodeJS.
+              </p>
+              <p class="about__text">
+                <span>My strengths:</span> I’m driven to succeed and deliver
+                results. And I have the ability to learn new technologies
+                quickly.
+              </p>
+            </section>
+            <section class="section experience">
+              <h2 class="title title--dark experience__title">experience</h2>
+              <ul class="experience__list">
+                <li class="experience__item">
+                  <div class="experience__box">
+                    <h3 class="experience__position">Student</h3>
+                    <span class="experience__date">Oct 2021 - Feb 2022</span>
+                  </div>
+                  <div class="experience__box">
+                    <a
+                      class="link link--dark experience__company"
+                      href="https://training.by/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >EPAM Training Center | Gomel</a
+                    >
+                    <p class="experience__text">
+                      Training "Front-End Development", Gomel
+                    </p>
+                  </div>
+                </li>
+                <li class="experience__item">
+                  <div class="experience__box">
+                    <h3 class="experience__position">Frontend Developer</h3>
+                    <span class="experience__date">Dec 2020 - Oct 2021</span>
+                  </div>
+                  <div class="experience__box">
+                    <a
+                      class="link link--dark experience__company"
+                      href="https://seoready.ru"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >Seoready | Saint-Petersburg</a
+                    >
+                    <p class="experience__text">
+                      Layout of new pages and editing of the layout, adjusting
+                      the adaptability of pages for mobile devices, correcting
+                      validator errors, eliminating bugs. Technical audit of
+                      sites and correction of technical aspects of the site.
+                      Code optimization in order to speed up the site. Updating
+                      text and graphic content.
+                    </p>
+                  </div>
+                </li>
+                <li class="experience__item">
+                  <div class="experience__box">
+                    <h3 class="experience__position">Assistant Mentor</h3>
+                    <span class="experience__date">June 2020 - Dec 2020</span>
+                  </div>
+                  <div class="experience__box">
+                    <a
+                      class="link link--dark experience__company"
+                      href="https://loftschool.com"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >LoftSchool | Saint-Petersburg</a
+                    >
+                    <p class="experience__text">
+                      I taught students markup code, HTML semantics, CSS styles,
+                      JavaScript basics, adaptive layout, basic functionality of
+                      working with Git. I checked students' practical tasks,
+                      code review, error analysis.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="section education">
+              <h2 class="title title--dark education__title">education</h2>
+              <div class="education__container">
+                <div class="education__box">
+                  <h3 class="education__major">Economist Manager</h3>
+                  <span class="education__date">1998 - 2004</span>
+                </div>
+                <div class="education__box">
+                  <h3 class="education__hei">
+                    Sukhoi State Technical University | Gomel
+                  </h3>
+                  <p class="education__text">Incomplete higher education</p>
+                </div>
+              </div>
+            </section>
+            <section class="section courses">
+              <h2 class="title title--dark courses__title">
+                courses & certificates
+              </h2>
+              <ul class="courses__list">
+                <li class="courses__item">
+                  <a
+                    class="link link--dark courses__link"
+                    href="https://app.rs.school/certificate/j55t1zxf"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >JS / FE Pre-School (JavaScript)</a
+                  >
+                  <p class="courses__text">2021 | RS School</p>
+                </li>
+                <li class="courses__item">
+                  <a
+                    class="link link--dark courses__link"
+                    href="https://loftschool.com/diploma/NPR31420ZJ284PZW8/en/pdf"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Profession: Web developer. Advanced course in Web
+                    Development / VUE</a
+                  >
+                  <p class="courses__text">2020 | IT-school “Loftschool”</p>
+                </li>
+                <li class="courses__item">
+                  <a
+                    class="link link--dark courses__link courses__link--udemy"
+                    href="#"
+                    >Modern JavaScript + Vue on real projects</a
+                  >
+                  <span>/</span>
+                  <a
+                    class="link link--dark courses__link"
+                    href="https://www.udemy.com/certificate/UC-04c8a658-cb41-4d5a-844a-7879aeb9ccbd/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Practical JavaScript (Advanced level)</a
+                  >
+                  <p class="courses__text">2020 | Udemy</p>
+                </li>
+                <li class="courses__item">
+                  <a
+                    class="link link--dark courses__link"
+                    href="https://cdn.specialist.ru/Content/Temp/User/groupcert/1915216small.png"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Web programmer. Creating websites in HTML 5 and CSS 3 /
+                    JavaScript</a
+                  >
+                  <a
+                    class="link link--dark courses__link courses__link--text"
+                    href="https://www.specialist.ru/profile/public/1256405"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Public Profile</a
+                  >
+                  <span>/</span>
+                  <a
+                    class="link link--dark courses__link courses__link--text"
+                    href="https://www.specialist.ru/graduate/best2019/740444"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Recommendation Letter</a
+                  >
+                  <p class="courses__text">
+                    2019 | EC “Specialist” at the Bauman State Technical
+                    University of Moscow
+                  </p>
+                </li>
+                <li class="courses__item">
+                  <a
+                    class="link link--dark courses__link"
+                    href="https://www.freecodecamp.org/certification/volkov_slava/responsive-web-design"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >Responsive Web Design</a
+                  >
+                  <span>/</span>
+                  <a
+                    class="link link--dark courses__link"
+                    href="https://www.freecodecamp.org/certification/volkov_slava/javascript-algorithms-and-data-structures"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >JavaScript Algorithms and Data Structures</a
+                  >
+                  <p class="courses__text">2019 | freeCodeCamp</p>
+                </li>
+              </ul>
+            </section>
+          </main>
+          <footer class="footer">
+            <time class="footer__year">2022</time>
+          </footer>
         </div>
-      </main>
-      <footer class="footer">
-        <span class="footer__name">&#169; Viacheslav Volkov</span>
-        <time class="footer__year">2022</time>
-      </footer>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

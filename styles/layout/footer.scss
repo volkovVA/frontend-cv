@@ -1,19 +1,9 @@
 .footer {
-  @include flex();
-}
-
-.footer__name {
-  display: block;
-  flex: 1 0 0%;
-  padding: rem(30) rem(50);
-  background-color: $bg-color;
-  color: $text-color;
+  margin-top: auto;
 }
 
 .footer__year {
   display: block;
-  flex: 0 0 auto;
-  width: 65%;
   padding: rem(30) rem(50);
   text-align: center;
   @include font-source(rem(18), 500);

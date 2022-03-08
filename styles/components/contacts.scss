@@ -1,9 +1,6 @@
-.contacts__title {
-  @extend %left-title;
-}
-
 .contacts__list {
-  padding: rem(36) rem(50);
+  padding-left: rem(50);
+  padding-right: rem(50);
 }
 
 .contacts__item {
@@ -22,7 +19,7 @@
   @include flex(none, none, column);
 }
 
-.contacts__name {
+.contacts__subtitle {
   @include font-source(rem(22), 400, $main-color);
 }
 
