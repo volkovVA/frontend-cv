@@ -30,11 +30,11 @@
 }
 
 .section {
-  margin-bottom: rem(40);
+  margin-bottom: rem(50);
 }
 
 .title {
-  margin-bottom: rem(40);
+  margin-bottom: rem(30);
   @include font-source(rem(26), 500);
   text-transform: uppercase;
   &--dark {

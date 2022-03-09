@@ -34,6 +34,39 @@
   color: $title-color;
 }
 
+.experience__company {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: rem(6);
+  line-height: 1.42;
+  &::before {
+    content: "";
+    display: block;
+    width: rem(30);
+    height: rem(30);
+    margin-right: rem(12);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+  }
+  &--epam::before {
+    margin-top: 4px;
+    width: rem(40);
+    height: rem(20);
+    background-image: url("./assets/img/epam.png");
+  }
+  &--seoready::before {
+    width: rem(26);
+    height: rem(26);
+    background-image: url("./assets/img/seoready.png");
+  }
+  &--loftschool::before {
+    width: rem(30);
+    height: rem(30);
+    background-image: url("./assets/img/loftschool.png");
+  }
+}
+
 .experience__date {
   font-weight: 500;
   white-space: nowrap;

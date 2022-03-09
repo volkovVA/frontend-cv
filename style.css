@@ -498,11 +498,11 @@ p {
 }
 
 .section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3.125rem;
 }
 
 .title {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.875rem;
   font-size: 1.625rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -848,6 +848,39 @@ p {
   font-weight: 500;
   line-height: 1.8;
   color: #434343;
+}
+
+.experience__company {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.375rem;
+  line-height: 1.42;
+}
+.experience__company::before {
+  content: "";
+  display: block;
+  width: 1.875rem;
+  height: 1.875rem;
+  margin-right: 0.75rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.experience__company--epam::before {
+  margin-top: 4px;
+  width: 2.5rem;
+  height: 1.25rem;
+  background-image: url("./assets/img/epam.png");
+}
+.experience__company--seoready::before {
+  width: 1.625rem;
+  height: 1.625rem;
+  background-image: url("./assets/img/seoready.png");
+}
+.experience__company--loftschool::before {
+  width: 1.875rem;
+  height: 1.875rem;
+  background-image: url("./assets/img/loftschool.png");
 }
 
 .experience__date {
