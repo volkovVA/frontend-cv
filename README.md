@@ -2,5 +2,5 @@
 
 #### CV Frontend
 
-- Demo: https://volkovva.github.io/frontend-cv
-- Markdown: https://volkovva.github.io/markdown/readme
+- CV: https://volkovva.github.io/frontend-cv
+- Markdown: https://github.com/volkovVA/frontend-cv/tree/markdown
