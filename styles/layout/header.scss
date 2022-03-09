@@ -1,6 +1,9 @@
 .header {
   width: 100%;
   padding: rem(60) 0 rem(40);
+  @include media-large {
+    padding: rem(40) 0;
+  }
   @include media-medium {
     position: absolute;
     top: 0;
@@ -18,7 +21,7 @@
     display: block;
     width: rem(210);
     min-height: rem(60);
-    top: -28%;
+    top: -23%;
     right: 4%;
     background-image: url("./assets/img/html+css+js+react.png");
     background-repeat: no-repeat;

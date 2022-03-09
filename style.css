@@ -565,6 +565,11 @@ p {
   width: 100%;
   padding: 3.75rem 0 2.5rem;
 }
+@media (max-width: 992px) {
+  .header {
+    padding: 2.5rem 0;
+  }
+}
 @media (max-width: 768px) {
   .header {
     position: absolute;
@@ -589,7 +594,7 @@ p {
   display: block;
   width: 13.125rem;
   min-height: 3.75rem;
-  top: -28%;
+  top: -23%;
   right: 4%;
   background-image: url("./assets/img/html+css+js+react.png");
   background-repeat: no-repeat;
@@ -904,6 +909,26 @@ p {
 
 .courses__text {
   font-weight: 500;
+}
+
+.color {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 3.125rem;
+}
+
+.color__text {
+  margin-right: 0.625rem;
+  color: #ffffff;
+}
+
+.color__change {
+  width: 4.375rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=style.css.map */
