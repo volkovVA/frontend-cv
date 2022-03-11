@@ -49,15 +49,26 @@
               alt="avatar"
             />
           </div>
-          <div class="color">
-            <label class="color__text" for="color">Select color:</label>
-            <input
-              id="color"
-              class="color__change"
-              type="color"
-              name="color"
-              value="#3a478e"
-            />
+          <div class="extra">
+            <div class="extra__box">
+              <label class="extra__text" for="color">Select color:</label>
+              <input
+                id="color"
+                class="extra__change"
+                type="color"
+                name="color"
+                value="#3a478e"
+              />
+            </div>
+            <div class="extra__box">
+              <span class="extra__download">PDF:</span>
+              <a
+                href="./assets/img/CV_Frontend_VolkovVA.pdf"
+                class="link link--light extra__link"
+                download
+                >Download</a
+              >
+            </div>
           </div>
           <section class="section contacts">
             <h2 class="title title--light contacts__title">contacts</h2>
@@ -114,25 +125,22 @@
                   >
                 </div>
               </li>
+              <li class="contacts__item">
+                <svg class="icon icon--github contacts__icon">
+                  <use xlink:href="./assets/svg/sprite.svg#github"></use>
+                </svg>
+                <div class="contacts__desc">
+                  <h3 class="contacts__subtitle">GitHub</h3>
+                  <a
+                    href="https://github.com/volkovVA"
+                    class="link link--light contacts__link"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >https://github.com/volkovVA
+                  </a>
+                </div>
+              </li>
             </ul>
-          </section>
-          <section class="section portfolio">
-            <h2 class="title title--light portfolio__title">portfolio</h2>
-            <div class="portfolio__container">
-              <svg class="icon icon--github portfolio__icon">
-                <use xlink:href="./assets/svg/sprite.svg#github"></use>
-              </svg>
-              <div class="portfolio__desc">
-                <h3 class="portfolio__subtitle">GitHub</h3>
-                <a
-                  href="https://github.com/volkovVA"
-                  class="link link--light portfolio__link"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  >https://github.com/volkovVA
-                </a>
-              </div>
-            </div>
           </section>
           <section class="section skills">
             <h2 class="title title--light skills__title">skills</h2>
@@ -140,10 +148,14 @@
               <div class="skills__box">
                 <h3 class="skills__subtitle">Technical</h3>
                 <ul class="skills__list">
-                  <li class="skills__item">HTML5 / Pug</li>
-                  <li class="skills__item">CSS3 / Sass</li>
-                  <li class="skills__item">JavaScript (ES6+)</li>
-                  <li class="skills__item">ReactJS / Redux</li>
+                  <li class="skills__item skills__item--color">HTML5 / Pug</li>
+                  <li class="skills__item skills__item--color">CSS3 / Sass</li>
+                  <li class="skills__item skills__item--color">
+                    JavaScript (ES6+)
+                  </li>
+                  <li class="skills__item skills__item--color">
+                    React / Redux
+                  </li>
                 </ul>
               </div>
               <div class="skills__box">
@@ -218,7 +230,7 @@
             <section class="section experience">
               <h2 class="title title--dark experience__title">experience</h2>
               <ul class="experience__list">
-                <li class="experience__item">
+                <!-- <li class="experience__item">
                   <div class="experience__box">
                     <h3 class="experience__position">Student</h3>
                     <span class="experience__date">Oct 2021 - Feb 2022</span>
@@ -235,11 +247,11 @@
                       Training "Front-End Development", Gomel
                     </p>
                   </div>
-                </li>
+                </li> -->
                 <li class="experience__item">
                   <div class="experience__box">
-                    <h3 class="experience__position">Frontend Developer</h3>
-                    <span class="experience__date">Dec 2020 - Oct 2021</span>
+                    <h3 class="experience__position">HTML Coder</h3>
+                    <span class="experience__date">Dec 2020 - Sep 2021</span>
                   </div>
                   <div class="experience__box">
                     <a
@@ -305,12 +317,14 @@
                 <li class="courses__item">
                   <a
                     class="link link--dark courses__link"
-                    href="https://app.rs.school/certificate/j55t1zxf"
+                    href="https://training.by/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    >JS / FE Pre-School (JavaScript)</a
+                    >Training: Front-End Development</a
                   >
-                  <p class="courses__text">2021 | RS School</p>
+                  <p class="courses__text">
+                    2021 - 2022 | EPAM Training Center, Gomel
+                  </p>
                 </li>
                 <li class="courses__item">
                   <a
@@ -323,7 +337,7 @@
                   >
                   <p class="courses__text">2020 | IT-school “Loftschool”</p>
                 </li>
-                <li class="courses__item">
+                <!-- <li class="courses__item">
                   <a
                     class="link link--dark courses__link courses__link--udemy"
                     href="#"
@@ -338,7 +352,7 @@
                     >Practical JavaScript (Advanced level)</a
                   >
                   <p class="courses__text">2020 | Udemy</p>
-                </li>
+                </li> -->
                 <li class="courses__item">
                   <a
                     class="link link--dark courses__link"
@@ -368,7 +382,7 @@
                     University of Moscow
                   </p>
                 </li>
-                <li class="courses__item">
+                <!-- <li class="courses__item">
                   <a
                     class="link link--dark courses__link"
                     href="https://www.freecodecamp.org/certification/volkov_slava/responsive-web-design"
@@ -385,7 +399,7 @@
                     >JavaScript Algorithms and Data Structures</a
                   >
                   <p class="courses__text">2019 | freeCodeCamp</p>
-                </li>
+                </li> -->
               </ul>
             </section>
             <section class="section projects">
@@ -396,7 +410,7 @@
                   <div class="projects__box">
                     <a
                       class="link link--dark projects__link"
-                      href="https://volkovva.github.io/newsportal/"
+                      href="https://sweet-creponne-628b82.netlify.app/"
                       rel="noopener noreferrer"
                       target="_blank"
                       >Live Demo
@@ -410,12 +424,9 @@
                       >Repo
                     </a>
                   </div>
-                  <ul class="projects__technologies-list">
-                    <li>HTML,&nbsp;</li>
-                    <li>CSS,&nbsp;</li>
-                    <li>React,&nbsp;</li>
-                    <li>Redux</li>
-                  </ul>
+                  <div class="projects__technologies-list">
+                    React, React Hooks, Redux, Router, Bootstrap
+                  </div>
                 </li>
                 <li class="projects__item">
                   <h4 class="projects__name">JS Clock:</h4>
@@ -436,11 +447,9 @@
                       >Repo
                     </a>
                   </div>
-                  <ul class="projects__technologies-list">
-                    <li>HTML,&nbsp;</li>
-                    <li>CSS,&nbsp;</li>
-                    <li>JavaScript</li>
-                  </ul>
+                  <div class="projects__technologies-list">
+                    HTML, SCSS, JavaScript
+                  </div>
                 </li>
                 <li class="projects__item">
                   <h4 class="projects__name">Video Player:</h4>
@@ -461,11 +470,9 @@
                       >Repo
                     </a>
                   </div>
-                  <ul class="projects__technologies-list">
-                    <li>HTML,&nbsp;</li>
-                    <li>SCSS,&nbsp;</li>
-                    <li>JavaScript</li>
-                  </ul>
+                  <div class="projects__technologies-list">
+                    HTML, SCSS, JavaScript
+                  </div>
                 </li>
                 <li class="projects__item">
                   <h4 class="projects__name">Virtual Piano:</h4>
@@ -486,9 +493,30 @@
                       >Repo</a
                     >
                   </div>
-                  <ul class="projects__technologies-list">
-                    <li>JavaScript</li>
-                  </ul>
+                  <div class="projects__technologies-list">JavaScript</div>
+                </li>
+                <li class="projects__item">
+                  <h4 class="projects__name">Bypablo:</h4>
+                  <div class="projects__box">
+                    <a
+                      class="link link--dark projects__link"
+                      href="https://volkovva.github.io/bypablo/"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >Live Demo</a
+                    >
+                    <span class="projects__name">&nbsp;/&nbsp;</span>
+                    <a
+                      class="link link--dark projects__link"
+                      href="https://github.com/volkovVA/bypablo"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >Repo</a
+                    >
+                  </div>
+                  <div class="projects__technologies-list">
+                    Pug, SCSS, JavaScript, BEM, Adaptive, Gulp
+                  </div>
                 </li>
                 <li class="projects__item">
                   <h4 class="projects__name">Air Asia:</h4>
@@ -509,11 +537,9 @@
                       >Repo</a
                     >
                   </div>
-                  <ul class="projects__technologies-list">
-                    <li>Pug,&nbsp;</li>
-                    <li>SCSS,&nbsp;</li>
-                    <li>Gulp</li>
-                  </ul>
+                  <div class="projects__technologies-list">
+                    Pug, SCSS, BEM, Gulp
+                  </div>
                 </li>
               </ul>
             </section>

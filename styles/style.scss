@@ -1,26 +1,25 @@
-@import "abstracts/functions";
-@import "abstracts/media";
-@import "abstracts/mixins";
-@import "abstracts/template";
-@import "abstracts/variables";
+@import 'abstracts/functions';
+@import 'abstracts/media';
+@import 'abstracts/mixins';
+@import 'abstracts/template';
+@import 'abstracts/variables';
 
-@import "vendors/normalize";
+@import 'vendors/normalize';
 
-@import "base/base";
-@import "base/general";
+@import 'base/base';
+@import 'base/general';
 
-@import "layout/header";
-@import "layout/main";
-@import "layout/footer";
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
 
-@import "components/avatar";
-@import "components/contacts";
-@import "components/skills";
-@import "components/projects";
-@import "components/about";
-@import "components/experience";
-@import "components/education";
-@import "components/courses";
-@import "components/color";
-@import "components/interests";
-@import "components/portfolio";
+@import 'components/avatar';
+@import 'components/contacts';
+@import 'components/skills';
+@import 'components/projects';
+@import 'components/about';
+@import 'components/experience';
+@import 'components/education';
+@import 'components/courses';
+@import 'components/extra';
+@import 'components/interests';

@@ -1,5 +1,5 @@
 .interests__list {
-  @include flex();
+  @include flex(center, none, none);
   flex-wrap: wrap;
   @extend %block-padding;
 }

@@ -13,7 +13,7 @@
 
 .contacts__item {
   @include flex(none, center, none);
-  margin-bottom: rem(20);
+  margin-bottom: rem(26);
   &:last-child {
     margin-bottom: 0;
   }

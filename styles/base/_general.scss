@@ -16,6 +16,7 @@
   @include flex(none, none, column);
   &__name {
     display: block;
+    margin-top: auto;
     padding: rem(30) rem(50);
     background-color: $bg-color;
     color: $text-color;
@@ -30,11 +31,11 @@
 }
 
 .section {
-  margin-bottom: rem(50);
+  margin-bottom: rem(40);
 }
 
 .title {
-  margin-bottom: rem(30);
+  margin-bottom: rem(40);
   @include font-source(rem(26), 500);
   text-transform: uppercase;
   &--dark {

@@ -1,0 +1,31 @@
+.extra {
+  @include flex(none, flex-start, column);
+  padding: rem(20) rem(50);
+}
+
+.extra__box {
+  margin-bottom: rem(10);
+}
+
+.extra__text {
+  margin-right: rem(10);
+  color: $main-color;
+}
+
+.extra__change {
+  width: rem(70);
+  cursor: pointer;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.extra__download {
+  margin-right: rem(10);
+  color: $main-color;
+}
+
+.extra__link {
+  color: $text-color;
+}

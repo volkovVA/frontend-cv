@@ -23,6 +23,7 @@
   font-size: rem(20);
   font-weight: 500;
   color: $title-color;
+  line-height: 1.8;
   &--text {
     @include font-source(rem(16), 500);
     font-style: italic;

@@ -23,6 +23,9 @@
 .skills__item {
   margin-bottom: rem(10);
   color: $text-color;
+  &--color {
+    color: $skills-color;
+  }
 }
 
 .skills__box {
