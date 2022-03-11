@@ -28,18 +28,18 @@
   background-color: #cccccc;
 }
 
-.interests__list, .courses, .education, .experience, .about, .projects, .skills__container, .contacts__list {
+.portfolio__container, .interests__list, .courses, .education, .experience, .about, .projects, .skills__container, .contacts__list {
   padding-left: 3.125rem;
   padding-right: 3.125rem;
 }
 @media (max-width: 992px) {
-  .interests__list, .courses, .education, .experience, .about, .projects, .skills__container, .contacts__list {
+  .portfolio__container, .interests__list, .courses, .education, .experience, .about, .projects, .skills__container, .contacts__list {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
 }
 @media (max-width: 768px) {
-  .interests__list, .courses, .education, .experience, .about, .projects, .skills__container, .contacts__list {
+  .portfolio__container, .interests__list, .courses, .education, .experience, .about, .projects, .skills__container, .contacts__list {
     padding-left: 1.875rem;
     padding-right: 1.875rem;
   }
@@ -986,6 +986,24 @@ p {
   border: 1px solid #ffffff;
   padding: 0.3125rem 1.125rem;
   border-radius: 5px;
+}
+
+.portfolio__container {
+  display: flex;
+}
+
+.portfolio__icon {
+  margin-right: 1.25rem;
+}
+
+.portfolio__subtitle {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.portfolio__link {
+  color: #cccccc;
 }
 
 /*# sourceMappingURL=style.css.map */
