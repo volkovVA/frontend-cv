@@ -1,0 +1,21 @@
+.interests__list {
+  @include flex();
+  flex-wrap: wrap;
+  @extend %block-padding;
+}
+
+.interests__item {
+  margin-bottom: rem(10);
+  margin-right: rem(5);
+  color: $text-color;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.interests__item span {
+  display: inline-block;
+  border: 1px solid $main-color;
+  padding: rem(5) rem(18);
+  border-radius: 5px;
+}
